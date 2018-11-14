@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nodehelloworld.ghettolabs.io
+  labels:
+    app: helloworld
+spec:
+  containers:
+  - name: basicnodeapp
+    image: buildmystartup/basicnodeapp
+    ports:
+    - name: nodejs-port
+      containerPort: 3000
